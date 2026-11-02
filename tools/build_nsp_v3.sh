@@ -12,7 +12,12 @@ cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/game_config.cpp /home
 cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp
 cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_save.cpp /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/scene_save.cpp
 cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_settings.cpp /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/scene_settings.cpp
+cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_title.cpp /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/scene_title.cpp
+cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.h /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.h
+cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp
+cp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/CMakeLists.txt /home/ubuntu/yn-build/vendor/easyrpg-player-0.8.1.1/CMakeLists.txt
 cp /mnt/d/YumeNikki-Nx/work/patched_picture/*.xyz /home/ubuntu/yn-build/package_v2/romfs/Picture/
+cp /mnt/d/YumeNikki-Nx/work/patched_picture/*.png /home/ubuntu/yn-build/package_v2/romfs/Picture/
 cp /mnt/d/YumeNikki-Nx/work/icon_256.jpg /home/ubuntu/yn-build/package_v2/control/icon_AmericanEnglish.dat
 cp /mnt/d/YumeNikki-Nx/work/icon_256.jpg /home/ubuntu/yn-build/package_v2/control/icon_SimplifiedChinese.dat
 cp /mnt/d/YumeNikki-Nx/work/icon_256.jpg /home/ubuntu/yn-build/package_v2/control/icon_TraditionalChinese.dat

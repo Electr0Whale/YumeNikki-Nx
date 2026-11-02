@@ -12,10 +12,13 @@ keys/
 *.keys
 
 # Temporary Build, Work & Distribution Artifacts
+vendor/
 build/
 dist/
 work/game/
 work/src/
+work/*preview*
+work/SwitchKeyGuide_*.png
 tools/Nro2Nsp-master/
 
 # OS & Editor Artifacts
