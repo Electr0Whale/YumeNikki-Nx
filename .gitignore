@@ -1,0 +1,28 @@
+# Binaries & Packaging Archives
+*.nsp
+*.nro
+*.zip
+*.tar.gz
+*.tar.xz
+*.7z
+*.rar
+
+# Keys & Secrets (NEVER commit prod.keys or title.keys)
+keys/
+*.keys
+
+# Temporary Build, Work & Distribution Artifacts
+build/
+dist/
+work/game/
+work/src/
+tools/Nro2Nsp-master/
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.vscode/
+.idea/
