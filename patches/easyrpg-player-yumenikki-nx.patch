@@ -1,6 +1,6 @@
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/CMakeLists.txt /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/CMakeLists.txt
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/CMakeLists.txt	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/CMakeLists.txt	2026-11-03 04:11:17.749681400 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/CMakeLists.txt work/src/easyrpg-player-0.8.1.1/CMakeLists.txt
+--- vendor/easyrpg-player-0.8.1.1/CMakeLists.txt	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/CMakeLists.txt	2026-11-03 04:11:17.749681400 +0800
 @@ -310,6 +310,8 @@
  	src/scene_import.h
  	src/scene_item.cpp
@@ -10,9 +10,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/CMa
  	src/scene_language.cpp
  	src/scene_language.h
  	src/scene_load.cpp
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp	2026-11-03 01:48:54.236759300 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp work/src/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/filesystem_stream.cpp	2026-11-03 01:48:54.236759300 +0800
 @@ -16,9 +16,14 @@
   */
  
@@ -48,9 +48,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  }
  
  Filesystem_Stream::InputMemoryStreamBufView::InputMemoryStreamBufView(Span<uint8_t> buffer_view)
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/game_config.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/game_config.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/game_config.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/game_config.cpp	2026-11-03 01:49:01.054075100 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/game_config.cpp work/src/easyrpg-player-0.8.1.1/src/game_config.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/game_config.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/game_config.cpp	2026-11-03 01:49:01.054075100 +0800
 @@ -63,6 +63,10 @@
  	font2.SetOptionVisible(false);
  	font2_size.SetOptionVisible(false);
@@ -103,9 +103,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  	player.screenshot_scale.FromIni(ini);
  	player.screenshot_timestamp.FromIni(ini);
  	player.automatic_screenshots.FromIni(ini);
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/game_config.h /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/game_config.h
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/game_config.h	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/game_config.h	2026-11-02 04:05:37.649537600 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/game_config.h work/src/easyrpg-player-0.8.1.1/src/game_config.h
+--- vendor/easyrpg-player-0.8.1.1/src/game_config.h	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/game_config.h	2026-11-02 04:05:37.649537600 +0800
 @@ -129,7 +129,7 @@
  		Utils::MakeSvArray("Scale to screen size (Causes scaling artifacts)", "Scale to multiple of the game resolution", "Like Nearest, but output is blurred to avoid artifacts")};
  	BoolConfigParam stretch{ "Stretch", "Stretch to the width of the window/screen", "Video", "Stretch", false };
@@ -115,9 +115,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  	EnumConfigParam<ConfigEnum::GameResolution, 3> game_resolution{ "Resolution", "Game resolution. Changes require a restart.", "Video", "GameResolution", ConfigEnum::GameResolution::Original,
  		Utils::MakeSvArray("Original (Recommended)", "Widescreen (Experimental)", "Ultrawide (Experimental)"),
  		Utils::MakeSvArray("original", "widescreen", "ultrawide"),
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/input_source.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/input_source.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/input_source.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/input_source.cpp	2026-11-03 00:16:46.745530100 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/input_source.cpp work/src/easyrpg-player-0.8.1.1/src/input_source.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/input_source.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/input_source.cpp	2026-11-03 00:16:46.745530100 +0800
 @@ -203,6 +203,8 @@
  }
  
@@ -135,9 +135,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  	keystates[Input::Keys::JOY_LTRIGGER_FULL] = (analog_input.trigger_left > AnalogInput::kMaxValue * 0.9);
  	keystates[Input::Keys::JOY_LTRIGGER_SOFT] =
  			(analog_input.trigger_left > JOYSTICK_TRIGGER_SENSIBILITY) &&
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp	2026-11-03 00:16:42.008743400 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.cpp	2026-11-03 00:16:42.008743400 +0800
 @@ -59,15 +59,26 @@
  	}
  	
@@ -186,9 +186,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  	threadWaitForExit(&audio_thread);
  	
  	// Deleting thread
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.h /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.h
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.h	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.h	2026-11-03 00:16:37.138016000 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.h work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.h
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/audio.h	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/audio.h	2026-11-03 00:16:37.138016000 +0800
 @@ -18,6 +18,7 @@
  #ifndef EP_PLATFORM_SWITCH_AUDIO_H
  #define EP_PLATFORM_SWITCH_AUDIO_H
@@ -206,9 +206,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  
  private:
  	Thread audio_thread;
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp	2026-11-03 01:12:57.688395400 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_buttons.cpp	2026-11-03 01:12:57.688395400 +0800
 @@ -29,16 +29,10 @@
  		{RIGHT, Keys::JOY_DPAD_RIGHT},
  		{DECISION, Keys::JOY_A},
@@ -274,9 +274,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +	cfg.gamepad_swap_analog.SetOptionVisible(false);
 +	cfg.gamepad_swap_dpad_with_buttons.SetOptionVisible(false);
  }
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h	1970-01-01 08:00:00.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h	2026-11-03 01:12:56.285255800 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h	1970-01-01 08:00:00.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/input_mapping.h	2026-11-03 01:12:56.285255800 +0800
 @@ -0,0 +1,132 @@
 +/*
 + * This file is part of EasyRPG Player.
@@ -410,9 +410,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +}
 +
 +#endif
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp	2026-11-03 01:48:23.187969300 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp work/src/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/main.cpp	2026-11-03 01:48:23.187969300 +0800
 @@ -16,8 +16,11 @@
   */
  
@@ -653,9 +653,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  	}
  
  	// Setup platform teardown code
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp	2026-11-03 00:16:01.837601000 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.cpp	2026-11-03 00:16:01.837601000 +0800
 @@ -29,12 +29,14 @@
  #include <EGL/eglext.h>
  #include <glad/glad.h>
@@ -836,9 +836,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +	cfg.stretch.SetOptionVisible(false);
 +	cfg.touch_ui.SetOptionVisible(false);
  }
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.h /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.h
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.h	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.h	2026-11-03 00:15:50.465508200 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.h work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.h
+--- vendor/easyrpg-player-0.8.1.1/src/platform/switch/ui.h	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/platform/switch/ui.h	2026-11-03 00:15:50.465508200 +0800
 @@ -23,6 +23,7 @@
  #include "color.h"
  #include "rect.h"
@@ -855,10 +855,42 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  
  #ifdef SUPPORT_AUDIO
  	std::unique_ptr<AudioInterface> audio_;
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp	1970-01-01 08:00:00.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp	2026-11-03 04:10:52.727129200 +0800
-@@ -0,0 +1,96 @@
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene.cpp work/src/easyrpg-player-0.8.1.1/src/scene.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/scene.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene.cpp	2026-11-03 04:31:14.869692800 +0800
+@@ -69,7 +69,8 @@
+ 	"GameBrowser",
+ 	"Teleport",
+ 	"Settings",
+-	"Language"
++	"Language",
++	"KeyGuide"
+ };
+ 
+ enum PushPopOperation {
+@@ -85,6 +86,7 @@
+ 		case GameBrowser:
+ 		case SceneMax:
+ 		case Logo:
++		case KeyGuide:
+ 			break;
+ 		case Title:
+ 			return lcf::rpg::SaveSystem::Scene_title;
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene.h work/src/easyrpg-player-0.8.1.1/src/scene.h
+--- vendor/easyrpg-player-0.8.1.1/src/scene.h	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene.h	2026-11-03 04:31:12.632212000 +0800
+@@ -60,6 +60,7 @@
+ 		Teleport,
+ 		Settings,
+ 		LanguageMenu,
++		KeyGuide,
+ 		SceneMax
+ 	};
+ 
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp	1970-01-01 08:00:00.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.cpp	2026-11-03 04:31:17.076205700 +0800
+@@ -0,0 +1,95 @@
 +/*
 + * This file is part of EasyRPG Player.
 + *
@@ -888,7 +920,7 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +#include "transition.h"
 +
 +Scene_KeyGuide::Scene_KeyGuide() {
-+	type = Scene::Null;
++	type = Scene::KeyGuide;
 +}
 +
 +void Scene_KeyGuide::Start() {
@@ -905,7 +937,7 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +		return;
 +	}
 +
-+	background.reset(new Sprite());
++	background = std::make_unique<Sprite>();
 +	BitmapRef bitmapRef = Cache::Picture(result->file, false);
 +	background->SetBitmap(bitmapRef);
 +
@@ -917,19 +949,18 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +	}
 +}
 +
++void Scene_KeyGuide::DrawBackground(Bitmap& dst) {
++	dst.Clear();
++}
++
 +void Scene_KeyGuide::vUpdate() {
-+	if (exiting) {
++	if (exiting || Scene::instance.get() != this) {
 +		return;
 +	}
 +
 +	// Wait 15 frames (~0.25s) to avoid consuming the button press from Title screen
 +	if (wait_frames < 15) {
 +		++wait_frames;
-+		return;
-+	}
-+
-+	if (Input::IsTriggered(Input::SETTINGS_MENU)) {
-+		Scene::Push(std::make_shared<Scene_Settings>());
 +		return;
 +	}
 +
@@ -955,10 +986,10 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +void Scene_KeyGuide::TransitionOut(SceneType /* next_scene */) {
 +	Transition::instance().InitErase(Transition::TransitionFadeOut, this, 30);
 +}
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.h /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.h
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.h	1970-01-01 08:00:00.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.h	2026-11-03 04:10:42.014658800 +0800
-@@ -0,0 +1,50 @@
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.h work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.h
+--- vendor/easyrpg-player-0.8.1.1/src/scene_keyguide.h	1970-01-01 08:00:00.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene_keyguide.h	2026-11-03 04:31:16.099886000 +0800
+@@ -0,0 +1,51 @@
 +/*
 + * This file is part of EasyRPG Player.
 + *
@@ -996,6 +1027,7 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +
 +	void Start() override;
 +	void vUpdate() override;
++	void DrawBackground(Bitmap& dst) override;
 +	void TransitionIn(SceneType prev_scene) override;
 +	void TransitionOut(SceneType next_scene) override;
 +
@@ -1009,9 +1041,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
 +};
 +
 +#endif
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_save.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_save.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_save.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_save.cpp	2026-11-03 01:48:29.332189600 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene_save.cpp work/src/easyrpg-player-0.8.1.1/src/scene_save.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/scene_save.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene_save.cpp	2026-11-03 01:48:29.332189600 +0800
 @@ -87,7 +87,9 @@
  		return false;
  	}
@@ -1023,9 +1055,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  }
  
  bool Scene_Save::Save(std::ostream& os, int slot_id, bool prepare_save) {
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_settings.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_settings.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_settings.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_settings.cpp	2026-11-03 01:48:31.530354800 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene_settings.cpp work/src/easyrpg-player-0.8.1.1/src/scene_settings.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/scene_settings.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene_settings.cpp	2026-11-03 01:48:31.530354800 +0800
 @@ -668,6 +668,7 @@
  	cfg.player = Player::player_config;
  
@@ -1034,9 +1066,9 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  
  	AsyncHandler::SaveFilesystem();
  
-diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_title.cpp /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_title.cpp
---- /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src/scene_title.cpp	2025-06-02 18:35:38.000000000 +0800
-+++ /mnt/d/YumeNikki-Nx/work/src/easyrpg-player-0.8.1.1/src/scene_title.cpp	2026-11-03 04:11:07.009655000 +0800
+diff -urN vendor/easyrpg-player-0.8.1.1/src/scene_title.cpp work/src/easyrpg-player-0.8.1.1/src/scene_title.cpp
+--- vendor/easyrpg-player-0.8.1.1/src/scene_title.cpp	2025-06-02 18:35:38.000000000 +0800
++++ work/src/easyrpg-player-0.8.1.1/src/scene_title.cpp	2026-11-03 04:31:34.933245400 +0800
 @@ -24,6 +24,7 @@
  #include "scene_settings.h"
  #include "scene_title.h"
@@ -1045,6 +1077,15 @@ diff -urN '--exclude=.git' /mnt/d/YumeNikki-Nx/vendor/easyrpg-player-0.8.1.1/src
  #include "audio.h"
  #include "audio_secache.h"
  #include "cache.h"
+@@ -119,7 +120,7 @@
+ }
+ 
+ void Scene_Title::Suspend(Scene::SceneType scene_type) {
+-	if (scene_type == Scene::Settings || scene_type == Scene::LanguageMenu) {
++	if (scene_type == Scene::Settings || scene_type == Scene::LanguageMenu || scene_type == Scene::KeyGuide) {
+ 		restart_title_cache = true;
+ 	}
+ 
 @@ -284,9 +285,10 @@
  	if (!CheckValidPlayerLocation()) {
  		Output::Warning("The game has no start location set.");
